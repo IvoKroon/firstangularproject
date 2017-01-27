@@ -1,0 +1,7 @@
+<h1>Detail page</h1>
+<div *ngIf(recipe)>
+    <h2>{{recipe.title}}</h2>
+    <p>{{recipe.desc}}</p>
+    <button (click)="removeRecipe()">Remove</button>
+    <a [routerLink]="['/edit/', recipe._id]"><button>Edit</button></a>
+</div>

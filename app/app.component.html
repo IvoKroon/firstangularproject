@@ -1,0 +1,9 @@
+<h1>
+  {{title}} HUH WHAT
+  {{user.name}} {{user.lastName}}
+</h1>
+  <hr>
+  <ul *ngIf="recipes">
+    ><li *ngFor="let recipe of recipes;let i = index;">{{recipe.title}} <button (click)="removeBook(i)">Remove</button></li>
+  </ul>
+

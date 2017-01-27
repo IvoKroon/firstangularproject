@@ -1,0 +1,10 @@
+<div *ngIf(recipe)>
+<h2>Edit {{recipe.title}}</h2>
+<form [formGroup]="recipeForm" (ngSubmit)="editRecipe($event)">
+    <input formControlName="title" type="text" placeholder="Title" value="{{recipe.title}}">
+    <input formControlName="desc" type="text" placeholder="Desc" value="{{recipe.desc}}">
+    <input formControlName="type" type="text" placeholder="Type" value="{{recipe.type}}">
+    <button type="submit">Aanpassen</button>
+</form>
+</div>
+

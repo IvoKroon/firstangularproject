@@ -1,0 +1,5 @@
+<h1>{{pageTitle}}</h1>
+
+<ul *ngIf(recipes)>
+    <li *ngFor="let recipe of recipes;let i = index;"><a [routerLink]="['/recipe',recipe._id]">{{recipe.title}}</a></li>
+</ul>
